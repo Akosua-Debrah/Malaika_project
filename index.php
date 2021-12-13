@@ -294,6 +294,69 @@ require ("crud_operations.php");
     }endwhile;
     ?>
 
+    <!-- About-->
+ <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase" style="color:white;"> ABOUT</h2>
+          <h3 class="section-subheading text" style="color:white;">The Genesis of Miss Malaika.</h3>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/malaika/malaika logo.jpg"
+                alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2009-2011</h4>
+                <h4 class="subheading">Miss Malaika</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text">Miss Malaika Ghana is a beauty pageant, reality show that was 
+                  first aired in Ghana in 2003. The show is produced by charter House Productions
+                   which is produced as a 12- to -13 week reality show. The concept of the show 
+                   presented to the audience is reality show that also allows its viewers to vote
+                    in order to keep their favorite contestants in the run. Each week contestants 
+                    are given task to complete which range from performances to organizing events.
+                     They are then assessed by a panel of judges and a contestant is evicted each
+                      week till we are down to the final 10 who qualify for the finale and the queen
+                       is finally crowned 
+</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/malaika/charter-house.jpg"
+                alt="..." /></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>March 2011</h4>
+                <h4 class="subheading">Charter House Ghana</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text">The Experiential Concepts Behind Charterhouse Company Limited
+                   established in 2000 as a Production and Events subsidiary of Multiple Concepts
+                    Group. Charterhouse has since then, become the biggest company in Event management
+                     and Audio-visual production in Ghana.As a one stop production house, we have developed
+                      the capacity to organize and produce any event or production of any size, from small to 
+                      medium to large, in either outdoor or indoor venues, anywhere in Ghana and WEST AFRICA.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                Be Part
+                <br />
+                Of Our
+                <br />
+                Story!
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
   
 
     <!-- ======= Hosts Section ======= -->
