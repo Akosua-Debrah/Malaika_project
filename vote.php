@@ -14,9 +14,8 @@ require ("crud_operations.php");
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/malaika/android-chrome-192x192.png" rel="icon">
-  <link href="assets/img/malaika/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- logo -->
+ <link href="assets/img/malaika/malaika logo.jpg" rel="icon">
 
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
