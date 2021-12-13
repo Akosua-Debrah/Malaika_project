@@ -18,8 +18,8 @@ require ("crud_operations.php");
   <link rel="icon" type="image/png" href="./assets/img/malaika/malaika logo.jpg" />
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/malaika/android-chrome-192x192.png" rel="icon">
+  <link href="assets/img/malaika/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
@@ -38,12 +38,6 @@ require ("crud_operations.php");
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: TheEvent - v4.7.0
-  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
