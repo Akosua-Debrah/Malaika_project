@@ -37,7 +37,6 @@ require ("crud_operations.php");
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/services.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: TheEvent - v4.7.0
@@ -68,7 +67,7 @@ require ("crud_operations.php");
           <li><a class="nav-link scrollto" href="index.php">Home</a></li>
           <li><a class="nav-link scrollto" href="index.php">About</a></li>
           <li><a class="nav-link scrollto" href="index.php">Gallery</a></li>
-          <li><a class="nav-link scrollto active" href="/">Vote</a></li>
+          <li><a class="nav-link scrollto active" href="#speakers">Vote</a></li>
           <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -426,7 +425,7 @@ require ("crud_operations.php");
             <span id="response"></span>
             <div class="col-md-4"></div>
               <div class="text-center mt-3">
-                <button type="submit" class="btn btn-primary" name="vote">Vote</button>
+                <button type="submit" class="btn btn-primary" name="vote" style="background-color:#f8234a;">Vote</button>
               </div>
             </form>
           </div>
@@ -461,8 +460,8 @@ require ("crud_operations.php");
 
       <div class="col" style="margin:100px;">
         <div class="row-lg-4 row-md-6" >
-          <div class="card text-white bg-primary mb-3" style="max-width: 18rem; background-color:f82249;">
-            <div class="card-body">
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem; ">
+            <div class="card-body" style="background-color:#f8234a;">
               <h1 class="card-title">
                 <?= $row['Delegate_name']?> -
                 <?= $row['value_occurrence']?>
@@ -503,8 +502,8 @@ require ("crud_operations.php");
 
 
         <div class="col-lg- col-md-6">
-          <div class="card text-black bg-primary mb-3" style="max-width: 18rem; background-color:f82249;">
-            <div class="card-body">
+          <div class="card text-black bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-body" style="background-color:#f8234a;">
               <h1 class="card-title" style="text-align:center;">Vote Count </h1>
               <h1 class="card-text" style="text-align:center;">
                 <?= $row['num_vote']?>
@@ -614,6 +613,11 @@ require ("crud_operations.php");
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <?php $connection->close(); ?>
 
 </body>
 

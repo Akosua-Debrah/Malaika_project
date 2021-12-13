@@ -36,7 +36,6 @@ require ("crud_operations.php");
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/services.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: TheEvent - v4.7.0
@@ -262,10 +261,10 @@ require ("crud_operations.php");
   <?php
     // display data from the database
     $squery = "select * from event_details where event_id=1;";
-    $results= $connection->query($squery);
+    $results= $connection->query($squery) or die($connection->error);
 
     // code for edit button
-    while($row =$results->fetch_assoc()):
+    while($row =$results->fetch_assoc()):{
   
   ?>
 
@@ -292,117 +291,10 @@ require ("crud_operations.php");
       </div>
     </section><!-- End About Section -->
     <?php
-    endwhile;
+    }endwhile;
     ?>
 
-    <!-- About-->
-    <section class="page-section" id="about">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase" style="color:white;"> ABOUT</h2>
-          <h3 class="section-subheading text" style="color:white;">The Genesis of Miss Malaika.</h3>
-        </div>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/malaika/malaika logo.jpg"
-                alt="..." /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 class="subheading">Miss Malaika</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text">Miss Malaika Ghana is a beauty pageant, reality show that was 
-                  first aired in Ghana in 2003. The show is produced by charter House Productions
-                   which is produced as a 12- to -13 week reality show. The concept of the show 
-                   presented to the audience is reality show that also allows its viewers to vote
-                    in order to keep their favorite contestants in the run. Each week contestants 
-                    are given task to complete which range from performances to organizing events.
-                     They are then assessed by a panel of judges and a contestant is evicted each
-                      week till we are down to the final 10 who qualify for the finale and the queen
-                       is finally crowned 
-</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/malaika/charter-house.jpg"
-                alt="..." /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 class="subheading">Charter House Ghana</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text">The Experiential Concepts Behind Charterhouse Company Limited
-                   established in 2000 as a Production and Events subsidiary of Multiple Concepts
-                    Group. Charterhouse has since then, become the biggest company in Event management
-                     and Audio-visual production in Ghana.As a one stop production house, we have developed
-                      the capacity to organize and produce any event or production of any size, from small to 
-                      medium to large, in either outdoor or indoor venues, anywhere in Ghana and WEST AFRICA.</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>
-                Be Part
-                <br />
-                Of Our
-                <br />
-                Story!
-              </h4>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-
-    <!-- Services-->
-    <section class="page-section" id="services">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-registered fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">Interested in Registering for next Season Of Miss Malaika Ghana?</h4>
-            <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
-            <a class="btn btn-primary btn-xl text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
-            <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"><button type="button"
-                class="ms-2">Register</button></a> -->
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-vote-yea fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">Vote for your Desired Candidate</h4>
-            <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
-            <br>
-            <a class="btn btn-primary btn-xl text-uppercase" href="vote.php">Vote</a>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-ticket-alt fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">Purchase a Ticket</h4>
-            <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
-            <br>
-            <br>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#buy-tickets">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
     <!-- ======= Hosts Section ======= -->
     <section id="speakers">
@@ -744,72 +636,7 @@ require ("crud_operations.php");
 
     </section><!-- End Buy Ticket Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="section-bg">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Have Any Questions?.</p>
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <a href="https://www.google.com/maps/place/Charterhouse+Event+organisers/@5.5738142,-0.2275947,17z/data=!3m1!4b1!4m5!3m4!1s0xfdf99f7c2464b79:0x1d6c6f659cd3fd1c!8m2!3d5.5739764!4d-0.2253985" target="_blank">
-               <i class="bi bi-geo-alt"></i></a>
-              <h3>Address</h3>
-                <address> B824/10 Feo Oyeo Link, Accra-North</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="bi bi-phone"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+233(0) 501 288 474">+233(0) 501 288 474</a></p> 
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="bi bi-envelope"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@charterhouseghana.com">info@charterhouseghana.com</a></p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit" name="send-message">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+  
 
   </main><!-- End #main -->
 

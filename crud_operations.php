@@ -1,6 +1,6 @@
 <?php
+session_start();
 require('db_conn.php');
-    session_start();
 
     
     // insert user details in signup table
