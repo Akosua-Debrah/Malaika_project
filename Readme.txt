@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+WebTech Final Project
 
-Template Name: TheEvent
-Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Project Name: Malaika
+project URL: http://20.108.55.156/Malaika_project/vote.php
+Author: Akosua Takyiwa-Debrah
+
