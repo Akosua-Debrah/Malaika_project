@@ -14,9 +14,6 @@ require ("crud_operations.php");
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- logo -->
-  <link rel="icon" type="image/png" href="./assets/img/malaika/malaika logo.jpg" />
-
   <!-- Favicons -->
   <link href="assets/img/malaika/android-chrome-192x192.png" rel="icon">
   <link href="assets/img/malaika/apple-touch-icon.png" rel="apple-touch-icon">
