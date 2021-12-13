@@ -15,7 +15,7 @@ require ("crud_operations.php");
   <meta content="" name="keywords">
 
   <!-- logo -->
- <link href="assets/img/malaika/malaika logo.jpg" rel="icon">
+ <link href="assets/img/malaika/malaika logo.jpg" rel="icon" width="50" height="50">
 
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
